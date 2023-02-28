@@ -4,30 +4,27 @@
   "info": {
     "singularName": "order",
     "pluralName": "orders",
-    "displayName": "order",
+    "displayName": "Order",
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "address": {
-      "type": "string"
-    },
-    "total": {
-      "type": "decimal"
-    },
-    "date": {
+    "order_date": {
       "type": "date"
     },
-    "quantity": {
-      "type": "integer"
+    "total_amount": {
+      "type": "decimal"
     },
-    "driver": {
+    "status": {
+      "type": "boolean"
+    },
+    "products": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::driver.driver"
+      "relation": "oneToMany",
+      "target": "api::product.product"
     }
   }
 }
