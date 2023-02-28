@@ -7,20 +7,14 @@
     "displayName": "Product"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
     "name": {
       "type": "string"
     },
-    "price": {
-      "type": "decimal"
-    },
-    "description": {
-      "type": "text"
-    },
-    "picture": {
+    "Picture": {
       "allowedTypes": [
         "images",
         "files",
@@ -29,6 +23,12 @@
       ],
       "type": "media",
       "multiple": false
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
