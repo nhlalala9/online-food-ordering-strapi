@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_lists",
+  "info": {
+    "singularName": "order-list",
+    "pluralName": "order-lists",
+    "displayName": "OrderList"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quantity": {
+      "type": "integer"
+    },
+    "unit_price": {
+      "type": "decimal"
+    },
+    "total_price": {
+      "type": "decimal"
+    }
+  }
+}
