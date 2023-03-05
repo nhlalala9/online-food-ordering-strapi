@@ -23,6 +23,11 @@
     },
     "date": {
       "type": "date"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
     }
   }
 }

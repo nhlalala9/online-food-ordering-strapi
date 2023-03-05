@@ -12,19 +12,31 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "order_date": {
+    "date": {
       "type": "date"
     },
-    "total_amount": {
-      "type": "decimal"
+    "cartDetails": {
+      "type": "json"
     },
     "status": {
-      "type": "boolean"
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Accepted"
+      ],
+      "default": "Pending"
     },
-    "products": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::product.product"
+    "address": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
     }
   }
 }
