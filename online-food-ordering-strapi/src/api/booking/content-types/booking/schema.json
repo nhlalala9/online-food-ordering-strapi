@@ -27,12 +27,17 @@
     "phone": {
       "type": "string"
     },
-    "status": {
-      "type": "string",
-      "default": "Pending"
-    },
     "time": {
       "type": "datetime"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Approved"
+      ],
+      "default": "Pending",
+      "required": false
     }
   }
 }

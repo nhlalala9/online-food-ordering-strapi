@@ -37,6 +37,9 @@
     },
     "email": {
       "type": "email"
+    },
+    "total": {
+      "type": "integer"
     }
   }
 }
