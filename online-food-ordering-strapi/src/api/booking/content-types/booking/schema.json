@@ -38,6 +38,21 @@
       ],
       "default": "Pending",
       "required": false
+    },
+    "notification": {
+      "type": "enumeration",
+      "enum": [
+        "Your Booking has been Appproved",
+        "You have a Pending Booking"
+      ],
+      "default": "You have a Pending Booking"
+    },
+    "camel": {
+      "type": "enumeration",
+      "enum": [
+        "Approved",
+        "Pending"
+      ]
     }
   }
 }

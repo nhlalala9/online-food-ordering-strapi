@@ -40,6 +40,14 @@
     "quantity": {
       "type": "integer",
       "default": 1
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "False",
+        "True"
+      ],
+      "default": "False"
     }
   }
 }

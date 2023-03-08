@@ -22,7 +22,9 @@
       "type": "enumeration",
       "enum": [
         "Pending",
-        "Accepted"
+        "Approved",
+        "Delivering",
+        "Completed"
       ],
       "default": "Pending"
     },
